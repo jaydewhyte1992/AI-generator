@@ -7,22 +7,32 @@
     <title>AI Generator</title>
   </head>
   <body>
-    <header>Welcome to my AI generator</header>
-
-    <form>
-      <input type="text" placeholder="Enter key words" autofocus required />
-      <input type="submit" />
-    </form>
-
-    <div>Travel Suggestions <br />will go here</div>
-
+    <div class="container">
+      <header><h1>Welcome to my AI generator</h1></header>
+      <form>
+        <input
+          type="text"
+          placeholder="Type your next destination"
+          autofocus
+          required
+          class="direction"
+        /><input type="Submit" value="Generate" class="generate" />
+      </form>
+      <main>
+        <div class="suggestions">Travel Suggestions will go here</div>
+      </main>
+    </div>
     <footer>
-      This generator was coded by Jayde White and is
+      This AI generator was coded by Jayde White <br />and is
       <a href="https://github.com/jaydewhyte1992/AI-generator" target="_blank"
         >open-sourced on GitHub</a
       >
-      and hosted on <a href="https://ai-generator-app.netlify.app/">Netlify</a>
+      and hosted on
+      <a href="https://ai-generator-app.netlify.app/" target="_blank"
+        >Netlify</a
+      >
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
