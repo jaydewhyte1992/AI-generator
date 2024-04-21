@@ -4,10 +4,10 @@ body {
 }
 .container {
   margin: 120px auto;
-  max-width: 600px;
+  max-width: 650px;
 }
 header {
-  margin-bottom: 40px;
+  margin-bottom: 80px auto 40px;
 }
 h1 {
   text-align: center;
