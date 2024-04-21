@@ -2,22 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>AI Generator</title>
   </head>
   <body>
-    <header><h1>Welcome to my AI generator</h1></header>
+    <header><h1>Your AI Guide to Global Gallivanting</h1></header>
     <main>
       <div class="container">
         <form id="travel-tips-form">
           <input
             type="text"
-            placeholder="Type your next destination"
+            placeholder="Where is your next adventure? 🌏"
             autofocus
             required
             class="direction"
+            id="user-input"
           /><input type="Submit" value="Generate" class="generate-button" />
         </form>
         <div class="suggestions-box" id="tips"></div>
