@@ -32,9 +32,9 @@ form {
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
-  color: salmon;
+  color: black;
 }
-.generate {
+.generate-button {
   margin-left: 10px;
   background: hotpink;
   color: white;
@@ -45,7 +45,7 @@ form {
   padding: 15px 24px;
   cursor: pointer;
 }
-.suggestions {
+.suggestions-box {
   font-size: 15px;
   background-color: white;
   padding: 20px;
