@@ -1,4 +1,5 @@
 function displayTips(response) {
+  console.log("Generated travel tips:", response.data.answer);
   new Typewriter("#tips", {
     strings: response.data.answer,
     autoStart: true,
@@ -14,8 +15,11 @@ function generateTips(event) {
   let prompt = `Generate travel tips about ${userRequest}`;
   let context =
     "User instructions: As a witty travel expert, craft a list of 5 humorous travel tips in basic HTML format. Begin with the heading Top Five Travel Tips for and maintain a light-hearted tone. Avoid numbering, use bullets, and ensure each tip is concise and witty.";
-  let apiURL = `https://api.shecodes.ai/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let inputElement = document.querySelector("#tips");
+  inputElement.classList.remove("hidden");
+  inputElement.innerHTML = `<div class="blink">⌛ Generating travel tips about ${userRequest}....</div>`;
   axios.get(apiURL).then(displayTips);
 }
 

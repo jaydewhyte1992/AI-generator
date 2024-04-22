@@ -6,13 +6,11 @@ body {
   margin: 120px auto;
   max-width: 650px;
 }
-header {
-  margin-bottom: 80px auto 40px;
-}
+
 h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.5;
   color: #272044;
 }
@@ -53,10 +51,28 @@ form {
   border-left: 3px solid hotpink;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
+.hidden {
+  display: none;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 
 footer {
   font-size: 10px;
   text-align: center;
+  margin-top: 12px;
 }
 a {
   color: hotpink;
