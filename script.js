@@ -13,8 +13,8 @@ function generateTips(event) {
   let apiKey = "dec30ab936f6fe43ot4b0dead25ade10";
   let prompt = `Generate travel tips about ${userRequest}`;
   let context =
-    "User instructions: You are a witty travel expert who loves to provide unique travel tips. Your mission is to generate a list of 5 top travel tips that are both important and humorous. Please provide tips in basic HTML. Make sure to follow the user instructions. Before listing the tips, the heading should be, 'Top five travel tips for'. Please keep answers short and witty, make sure each point is on a new line and keep the mood light and fun!";
-  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+    "User instructions: As a witty travel expert, craft a list of 5 humorous travel tips in basic HTML format. Begin with the heading Top Five Travel Tips for and maintain a light-hearted tone. Avoid numbering, use bullets, and ensure each tip is concise and witty.";
+  let apiURL = `https://api.shecodes.ai/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiURL).then(displayTips);
 }
