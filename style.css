@@ -86,14 +86,18 @@ form {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   font-size: 11px;
-  margin-top: auto;
   text-align: center;
   padding: 15px;
-  background-color: #282727;
+  background-color: #1b191e;
   opacity: 0.8;
   color: white;
 }
+
 a {
   color: hotpink;
   font-weight: lighter;
